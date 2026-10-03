@@ -12,7 +12,7 @@ dotenv.config();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://food-ordering-system-livid.vercel.app/",
+    origin: "https://food-ordering-system-livid.vercel.app",
     credentials: true,
   }),
 );
