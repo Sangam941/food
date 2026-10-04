@@ -71,9 +71,9 @@ export const login = async (req,res)=>{
         // set the token into cookies
         // also secure the cookies
         res.cookie("token", token, {
-            HttpOnly:true,  
+            httpOnly:true,  
             secure: process.env.NODE_ENV === 'production',
-            sameSite: process.env.NODE_ENV === 'production'?'strict':"lax",
+            sameSite: "none",
             maxAge: 2*60*60*1000   //2hours
         })
     
